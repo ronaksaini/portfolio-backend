@@ -6,7 +6,12 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 5000;
 const cors = require('cors');
-app.use(cors());
+const corsOptions = {
+  origin: 'https://ronaktanwarportfolio.netlify.app/', // Replace with your Netlify frontend URL
+};
+
+// Use CORS middleware with options
+app.use(cors(corsOptions));
 // Body parser middleware
 app.use(bodyParser.json());
 
