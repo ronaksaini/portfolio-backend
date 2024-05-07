@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/contact-form', {
+mongoose.connect('mongodb+srv://sainironak838:6VvlkzSYOD7WemOX@portfolio-contact.wv7ciea.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
